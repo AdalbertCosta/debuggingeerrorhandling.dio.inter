@@ -63,3 +63,51 @@ function tryCatchExemplo(string) {
 }
 
 tryCatchExemplo('');
+
+//Finally
+// Tratamento de erros
+
+/*----------------------------------------------------------------*/
+
+function verificaPalindromo(string) {
+  if (!string) throw "String inválida";
+
+  return string === string.split('').reverse().join('');
+}
+
+function tryCatchExemplo(string) {
+  try {
+    return verificaPalindromo(string)
+  }
+  catch(e) {
+    throw e;   
+  }
+  finally {
+    console.log('A string enviada foi:' + string);
+  }
+}
+
+tryCatchExemplo(''); // Uncaught String inválida
+
+/*----------------------------------------------------------------*/
+
+function verificaPalindromo(string) {
+  if (!string) throw "String inválida";
+
+  return string === string.split('').reverse().join('');
+}
+
+function tryCatchExemplo(string) {
+  try {
+    return verificaPalindromo(string)
+  }
+  catch(e) {
+    throw e;   
+  }
+  finally {
+    console.log('A string enviada foi:' + string);
+  }
+}
+
+tryCatchExemplo('ala'); // A string enviada foi: ala -> true
+
