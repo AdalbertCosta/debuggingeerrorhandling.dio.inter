@@ -10,9 +10,9 @@ new Error(message, filename, linNumber)
 
 // todos os parametros são opcionais
 
-const Meu Error = new Error('Mensagem Inválida');
+const Meu Erro = new Error('Mensagem Inválida');
 
-throw MeuError;
+throw Meu Erro;
 
 /*------------------------------*/
 
